@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Test Author.",
+  "classifications": [ "Blazor", "Web"],
+  "description": "Creates a Blazor WebAssembly application.",
+  "shortName": "testblazorwasm",
+  "identity": "Test.Blazor.Wasm",
+
+  "name": "Test Blazor WebAssembly App",
+  "sourceName" : "$safeprojectname$",
+  "defaultName": "TestBlazorWebAssemblyApp",
+"symbols": {
+  },
+  "primaryOutputs": [
+    { "path": "$safeprojectname$.csproj" }
+  ],
+  "sources": [
+    {
+    }
+  ],
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "postActions": [
+  ]
+
+}

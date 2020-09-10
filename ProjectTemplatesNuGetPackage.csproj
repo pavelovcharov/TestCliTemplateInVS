@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageVersion>1.0.0</PackageVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Test Author.</Authors>
+    <Company>Test Company.</Company>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <PackageId>Test.Blazor.ProjectTemplates</PackageId>
+    <Description>Project templates that allow you to create Blazor applications</Description>
+    <Product>Test.Blazor.ProjectTemplates</Product>
+    <PackageTags>Blazor;Project Templates;Templates;Web;Components;Razor</PackageTags>
+
+    <PackageIcon>Icon.png</PackageIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="**\*" />
+    <Content Include=".\ProjectTemplatesPackage\TemplatesSource\**\*" Exclude="**\obj\**;**\bin\**;**\*.user;**\*.SCC;**\*.vstemplate;**\*CS.csproj;**\*VB.vbproj;**\*VB.csproj;**\Icon.ico;**\readme.html;**\start.html;**\__TemplateIcon.ico;**\App.Client.csproj;**\App.Server.csproj">
+
+    </Content>
+    <EmbeddedResource Remove="**\*" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ProjectTemplatesPackage\Images\Icon.png" Pack="true" PackagePath="Icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <!--<ItemGroup>
+    <Folder Include="ProjectTemplatesPackage\EULA\" />
+  </ItemGroup>-->
+</Project>

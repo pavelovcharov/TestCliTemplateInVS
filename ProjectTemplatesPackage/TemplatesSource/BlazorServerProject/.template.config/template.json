@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Test Author.",
+  "classifications": [ "Blazor", "Web"],
+  "description": "Creates a Blazor Server application.",
+  "shortName": "testblazorserver",
+  "identity": "Test.Blazor.Server",
+
+  "name": "Test Blazor Server App",
+  "sourceName" : "$safeprojectname$",
+  "defaultName": "TestBlazorServerApp",
+  "symbols": {
+  },
+  "primaryOutputs": [
+    { "path": "$safeprojectname$.csproj" }
+  ],
+  "sources": [
+    {
+      "modifiers": [
+      ]
+    }
+  ],
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "postActions": [
+  ]
+}
